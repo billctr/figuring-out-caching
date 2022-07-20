@@ -8,7 +8,7 @@ docker rm foc
 docker image rm nginx-local
 
 # Build image
-docker build --build-arg SOURCE_MAP_SECRET=abcd --tag nginx-local --no-cache .
+docker build --build-arg SOURCE_MAP_SECRET=abcd --build-arg VERSION=$VERSION --tag nginx-local --no-cache .
 
 # Run container on port 3000
 docker run -p 3000:80 --name foc -d nginx-local

@@ -2,7 +2,10 @@ FROM node:14 as build
 
 WORKDIR /application
 
-RUN ["npm", "install", "git+https://github.com/billctr/figuring-out-caching.git"]
+ARG VERSION
+ENV VERSION=$VERSION
+
+RUN npm install git+https://github.com/billctr/figuring-out-caching.git#$VERSION
 
 FROM nginx:1.19.2-alpine
 
