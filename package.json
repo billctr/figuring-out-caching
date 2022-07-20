@@ -1,11 +1,13 @@
 {
   "name": "figuring-out-caching",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "How to work with caching in nginx",
   "main": "index.js",
   "scripts": {
-    "build:default": "rm -rf ./dist & REVERSED_WELCOME=false IMAGE_2=false webpack --config config/webpack.config.js",
-    "build:reverse": "rm -rf ./dist & REVERSED_WELCOME=true IMAGE_2=true webpack --config config/webpack.config.js"
+    "start": "webpack serve --config config/webpack.config.js --no-client-overlay-warnings",
+    "build": "rm -rf ./dist & webpack --config config/webpack.config.js",
+    "build:default": "REVERSED_WELCOME=false IMAGE_2=false npm run build",
+    "build:reverse": "REVERSED_WELCOME=true IMAGE_2=true npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +15,7 @@
     "compression-webpack-plugin": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
   }
 }

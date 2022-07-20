@@ -1,6 +1,6 @@
 export function sayHello(isReversed) {
   const message = "Hello world!";
-  const reversedMessage = message.split("").reverse.join("");
+  const reversedMessage = message.split("").reverse().join("");
 
   console.log(isReversed ? reversedMessage : message);
 }
@@ -8,7 +8,7 @@ export function sayHello(isReversed) {
 export function appendImage(image) {
   const imgEl = document.createElement("img");
   imgEl.src = image;
-  imgEl.style.width = "100px";
+  imgEl.style.width = "150px";
 
-  document.body.append(img);
+  document.body.append(imgEl);
 }

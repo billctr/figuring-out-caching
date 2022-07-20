@@ -7,5 +7,5 @@ import("./js/functions").then(({ sayHello, appendImage }) => {
   } else {
     image = require("./assets/photo1.webp");
   }
-  appendImage(process.env.IMAGE);
+  appendImage(image);
 });
