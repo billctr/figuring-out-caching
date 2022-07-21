@@ -8,6 +8,8 @@
 
   - Tags: `v0.0.4-d`, `v0.0.4-r`
 
+- Build using yarn: `a9c6627aa9ae7a11c8828cb56fbb5070bb40a333`
+
 ## Reproducible steps
 
 ### Simple cache checking
@@ -80,3 +82,34 @@ To check how cache works, follow these steps:
 
 - Do a hard refresh (Command + Shift + R) at `http://localhost:3000/route`
   - Now you get the new version of both routes
+
+### Caching with yarn
+
+To check how cache works, follow these steps:
+
+- Checkout `a9c6627a`
+
+  ```bash
+  git checkout a9c6627a
+  ```
+
+- Run:
+
+  ```bash
+  VERSION=0.0.4-d sh build-docker.sh
+  ```
+
+- Go to `http://localhost:3000`
+
+  - If you had the npm version installed previously, you will notice that the page is already cached in the wrong version. Do a hard refresh to get the yarn version.
+  - Yarn does not mock the Last-Modified date (npm does), so by checking your Last-Modified date is a current one, you'll know you have the yarn version.
+
+- Run:
+
+  ```bash
+  VERSION=0.0.4-r sh build-docker.sh
+  ```
+
+- Refresh the `http://localhost:3000` page (a simple refresh)
+
+  - You will notice that now you get the correct version, the browser does not persist the cache. That's because the Last-Modified date of the file changed, the browser notices that and request the new version.
