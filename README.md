@@ -8,9 +8,11 @@
 
   - Tags: `v0.0.4-d`, `v0.0.4-r`
 
-- Build using yarn: `a9c6627aa9ae7a11c8828cb56fbb5070bb40a333`
+- Build with yarn: `a9c6627aa9ae7a11c8828cb56fbb5070bb40a333`
 
-- Cache control header: `2e4e0d87bbe4c23fbd2865e356857f94371e585d`
+- Cache control header with yarn: `2e4e0d87bbe4c23fbd2865e356857f94371e585d`
+
+- Cache control header with npm: `b4f459eea374320545a91fec68bd920043df1786`
 
 ## Reproducible steps
 
@@ -148,3 +150,5 @@ To check how cache works, follow these steps:
 - Refresh the `http://localhost:3000` page (a simple refresh)
 
   - You will notice that now you get the correct version, the browser does not persist the cache.
+
+- You can also test the npm build with the no-cache header at `b4f459ee`. You'll see the result remains the same (no caching).
