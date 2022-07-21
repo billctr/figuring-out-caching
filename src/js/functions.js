@@ -2,7 +2,7 @@ export function sayHello(isReversed) {
   const message = "Hello world!";
   const reversedMessage = message.split("").reverse().join("");
 
-  console.log(isReversed ? reversedMessage : message);
+  console.log(process.env.REVERSED_WELCOME ? reversedMessage : message);
 }
 
 export function appendImage(image) {

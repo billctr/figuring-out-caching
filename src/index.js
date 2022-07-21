@@ -1,5 +1,5 @@
 import("./js/functions").then(({ sayHello, appendImage }) => {
-  sayHello(process.env.REVERSED_WELCOME);
+  sayHello();
 
   let image;
   if (process.env.IMAGE_2) {
