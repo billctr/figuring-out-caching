@@ -4,7 +4,7 @@
   "description": "How to work with caching in nginx",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config config/webpack.config.js --no-client-overlay-warnings",
+    "start": "webpack serve --config config/webpack.config.js --no-client-overlay-warnings --history-api-fallback",
     "build": "rm -rf ./dist & webpack --config config/webpack.config.js",
     "build:default": "REVERSED_WELCOME=false IMAGE_2=false npm run build",
     "build:reverse": "REVERSED_WELCOME=true IMAGE_2=true npm run build"
