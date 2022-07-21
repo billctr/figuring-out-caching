@@ -1,12 +1,19 @@
+## Available app versions
+
+- Simple page version:
+
+  - With earth and normal text: `v0.0.3-d`
+  - With mars and reversed text: `v0.0.3-r`
+
+- Navigation version:
+
+  - With earth and normal text: `v0.0.4-d`
+  - With mars and reversed text: `v0.0.4-r`
+  - With earth and reversed text: `v0.0.4-re`
+
 ## Important commits
 
-- Simple page version with npm: `e523d4c7bd18b0be8bd6177b36a399adc428f782`
-
-  - Tags: `v0.0.3-d`, `v0.0.3-r`
-
-- Navigation version with npm: `ea5d8deea507284ff05fb9d77c7a3dfcb7f813f0`
-
-  - Tags: `v0.0.4-d`, `v0.0.4-r`
+- Build with npm: `ea5d8deea507284ff05fb9d77c7a3dfcb7f813f0`
 
 - Build with yarn: `a9c6627aa9ae7a11c8828cb56fbb5070bb40a333`
 
