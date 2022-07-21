@@ -5,7 +5,7 @@ WORKDIR /application
 ARG VERSION
 ENV VERSION=$VERSION
 
-RUN yarn add git+https://github.com/billctr/figuring-out-caching.git#$VERSION
+RUN npm install git+https://github.com/billctr/figuring-out-caching.git#$VERSION
 
 FROM nginx:1.19.2-alpine
 

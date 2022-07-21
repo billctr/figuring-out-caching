@@ -115,3 +115,36 @@ To check how cache works, follow these steps:
 - Refresh the `http://localhost:3000` page (a simple refresh)
 
   - You will notice that now you get the correct version, the browser does not persist the cache. That's because the Last-Modified date of the file changed, the browser notices that and request the new version.
+
+### Caching with no-cache header
+
+To check how cache works, follow these steps:
+
+- Checkout `2e4e0d87`
+
+  ```bash
+  git checkout 2e4e0d87
+  ```
+
+- Run:
+
+  ```bash
+  VERSION=0.0.4-d sh build-docker.sh
+  ```
+
+- Go to `http://localhost:3000`
+
+- Do a hard refresh at `http://localhost:3000`
+
+  - If you check the page response headers you will see the new `Cache-Control: no-store, no-cache, must-revalidate` is present there at the html file
+  - Js and image files do not have this header, because when those files change, their hash will change, forcing the old cached file to not be used and the new one to be requested.
+
+- Run:
+
+  ```bash
+  VERSION=0.0.4-r sh build-docker.sh
+  ```
+
+- Refresh the `http://localhost:3000` page (a simple refresh)
+
+  - You will notice that now you get the correct version, the browser does not persist the cache.
