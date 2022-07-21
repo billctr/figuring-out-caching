@@ -10,6 +10,8 @@
 
 - Build using yarn: `a9c6627aa9ae7a11c8828cb56fbb5070bb40a333`
 
+- Cache control header: `2e4e0d87bbe4c23fbd2865e356857f94371e585d`
+
 ## Reproducible steps
 
 ### Simple cache checking
