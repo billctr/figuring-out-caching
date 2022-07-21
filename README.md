@@ -152,3 +152,11 @@ To check how cache works, follow these steps:
   - You will notice that now you get the correct version, the browser does not persist the cache.
 
 - You can also test the npm build with the no-cache header at `b4f459ee`. You'll see the result remains the same (no caching).
+
+## References
+
+- https://serverfault.com/questions/1030105/my-browser-keeps-showing-cached-page-despite-sending-no-cache-no-store-must-re
+
+- https://blog.logrocket.com/caching-headers-a-practical-guide-for-frontend-developers/
+
+- https://simonhearne.com/2022/caching-header-best-practices/
