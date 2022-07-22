@@ -21,6 +21,10 @@
 
 - Cache control header with npm: `b4f459eea374320545a91fec68bd920043df1786`
 
+- Proposed cache solution with yarn: `65b73ffa60ea8ec484e1d07021fc755a8a64dcdd`
+
+- Proposed cache solution with npm: `8ae5d6ef0e8e242029b1722aa97a6336914591c7`
+
 ## Reproducible steps
 
 ### Simple cache checking
