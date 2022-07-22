@@ -8,6 +8,7 @@
 - Navigation version:
 
   - With earth and normal text: `v0.0.4-d`
+  - With mars and normal text: `v0.0.4-dm`
   - With mars and reversed text: `v0.0.4-r`
   - With earth and reversed text: `v0.0.4-re`
 
