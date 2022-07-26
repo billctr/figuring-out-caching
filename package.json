@@ -1,6 +1,6 @@
 {
   "name": "figuring-out-caching",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "How to work with caching in nginx",
   "main": "index.js",
   "scripts": {

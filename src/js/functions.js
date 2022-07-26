@@ -13,9 +13,7 @@ export function appendImage(image) {
   document.body.append(imgEl);
 }
 
-export function loremIpsum() {
-  const text =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lacus sed ultrices laoreet, arcu odio mattis risus, sit amet bibendum tortor magna sollicitudin sem. Donec elit sem, convallis scelerisque diam ut, luctus hendrerit purus. Suspendisse tempor nisi vitae neque suscipit iaculis. Phasellus sit amet nunc egestas, venenatis massa quis, lacinia justo. Aliquam ultrices hendrerit leo, non tincidunt diam tempor lobortis. Curabitur pharetra in tellus eu pulvinar. Integer quis nibh iaculis, ultrices leo ac, feugiat erat. Cras at congue ligula, non consequat enim.";
+export function appendText(text) {
   const reversedText = text.split("").reverse().join("");
 
   const div = document.createElement("div");

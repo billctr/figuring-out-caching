@@ -16,13 +16,7 @@ async function routing() {
   const route = window.location.pathname;
 
   switch (route) {
-    case "/route":
-      const { loremIpsum } = await import("./js/functions");
-
-      loremIpsum();
-
-      break;
-    default:
+    case "/":
       const { sayHello, appendImage } = await import("./js/functions");
 
       sayHello();
@@ -34,6 +28,15 @@ async function routing() {
         image = require("./assets/photo1.webp");
       }
       appendImage(image);
+
+      break;
+    default:
+      const { appendText } = await import("./js/functions");
+
+      appendText(
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lacus sed ultrices laoreet, arcu odio mattis risus, sit amet bibendum tortor magna sollicitudin sem. Donec elit sem, convallis scelerisque diam ut, luctus hendrerit purus. Suspendisse tempor nisi vitae neque suscipit iaculis. Phasellus sit amet nunc egestas, venenatis massa quis, lacinia justo. Aliquam ultrices hendrerit leo, non tincidunt diam tempor lobortis. Curabitur pharetra in tellus eu pulvinar. Integer quis nibh iaculis, ultrices leo ac, feugiat erat. Cras at congue ligula, non consequat enim."
+      );
+      appendText(route);
 
       break;
   }
