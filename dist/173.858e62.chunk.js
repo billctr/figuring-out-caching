@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfiguring_out_caching=self.webpackChunkfiguring_out_caching||[]).push([[173],{173:(e,n,t)=>{function o(){const e="Hello world!".split("").reverse().join("");console.log(e)}function c(e){const n=document.createElement("img");n.src=e,n.style.width="150px",document.body.append(n)}function i(e){const n=e.split("").reverse().join(""),t=document.createElement("div");t.classList.add("lorem-ipsum"),t.innerText=n,document.body.append(t)}t.r(n),t.d(n,{appendImage:()=>c,appendText:()=>i,sayHello:()=>o})}}]);
-//# sourceMappingURL=173.858e62.chunk.js.map
